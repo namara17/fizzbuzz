@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  
+	 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+ 
+ 
+
+ </head>
+
+ <body>	 <!-- <script type="text/javascript" src="js/fizzbuzz.js" ></script> -->
+  Coding Help:&nbsp; 	https://msdn.microsoft.com/library/yfc4b32c(v=vs.94).aspx <br /><br />
+<p id="Print the Fizz-Buzz list!"></p> 
+
+ <div id="outputDiv"></div>
+
+      <script type="text/javascript">
+	  document.write("This is the output:");
+ 					  
+		  </script>											  
+
+	
+      <script type="text/javascript">
+// Fizz Buzz
+$(document).ready(function(){
+var printNum = [];
+for(i=1; i<101; i++) {
+   var testVal = 0;     // track if BOTH fizz & buzz
+   printNum[i-1] = i;
+  
+   if (i%3 ===  0)
+   {printNum [i-1] = "Fizz";
+	 var testVal = 1;
+	}           // End %3 loop
+
+	if (i%5 === 0)
+	   {
+		if (testVal === 1)
+		   {  printNum[i-1] = "Fizz Buzz";    // ..or getElementById([i]).value("Fizz Buzz");?
+		   }  
+	       else {
+			   printNum[i-1] = "Buzz";
+	           console.log(printNum[i-1]);
+		        }
+	   }    // End true %5 loop
+   testVal = 0;
+   document.write	("   printNum = "+printNum[i-1]+"<br />");
+  }         //  End outer For Loop
+});		 //  End function fizzbuzz
+  </script>											  
+
+ </body>
+</html>
