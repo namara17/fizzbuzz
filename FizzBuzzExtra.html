@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>FizzBuzz Exper</title>
+   <style>
+   h2{ margin-left:22px;
+   }
+   .changeBg { background-color:gray; }
+   .right {float:left; margin-right:22px;
+   }
+   </style>
+	 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  	 <script type="text/javascript" src="js/Exper.js"></script> 
+ </head>
+
+ <body>	 
+   <!-- Coding Help:&nbsp; 	https://msdn.microsoft.com/library/yfc4b32c(v=vs.94).aspx --> 
+   <br /><br />
+
+<h2>FIZZ BUZZ!</h2> 
+ <div><p> Type in a number from 1 to 100:<br /> 
+ FizzBuzzer will substitute the word "Fizz" for every number divisible by 3, and "Buzz" for every number divisible by 5.</p><p></p></div>
+ 
+  <div id="" class="right">
+	<input type="text" width=23 name="maxinput" id="maxinput"/>
+   <input type="submit" value="Click" onclick="fizzbuzz()"/>
+  </div>
+
+ <div id="outputDiv" class="right"></div>
+ 
+
+<!-- 
+<script type="text/javascript">
+//$(document).ready(function() {
+ function fizzbuzz() {
+ var maxn = document.getElementById('maxinput').value;
+	var printNum = [];
+for(var i=1; i <= maxn; i++) {
+   var testVal = 0;     // track if BOTH fizz & buzz
+   printNum[i-1] = i;
+  
+   if (i%3 ===  0)
+   { printNum [i-1] = "Fizz";
+	 var testVal = 1;
+	}           // End %3 loop
+
+	if (i%5 === 0)
+	   {
+		if (testVal === 1)
+		   {  printNum[i-1] = "Fizz Buzz"; 
+		   }
+	       else {
+			   printNum[i-1] = "Buzz";
+	           console.log(printNum[i-1]);
+		        }
+	   }    // End true %5 loop
+   testVal = 0;
+ //  document.write	(printNum[i-1]+"<br />");
+    $('#outputDiv').append(printNum[i-1]+"<br />");
+ 
+  }         //  End outer For Loop
+});		 //  End function fizzbuzz
+</script>
+ -->
+ </body>
+</html>
